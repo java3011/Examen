@@ -1,0 +1,37 @@
+#cajaG {
+  margin-left: -40px;
+}
+
+#cajaG li {
+  list-style: none;
+  padding-left: 10px;
+  margin-right: -10px;
+  margin-left: 30px;
+  border: 1px solid black;
+}
+
+#cajaG li #mar {
+  font-size: 28px;
+}
+
+#cajaG li #mo {
+  font-size: 20px;
+}
+
+#cajaG li #cla {
+  font-size: 25px;
+}
+
+#cajaG li #but {
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: 80px;
+  background-color: white;
+}
+
+#cajaG li #val {
+  border: white;
+  padding-left: 220px;
+}
+/*# sourceMappingURL=inicio.component.css.map */

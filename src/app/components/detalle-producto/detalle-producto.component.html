@@ -1,0 +1,48 @@
+<section>
+    <a class="nav-link" href="" id="nut">Volver atrás</a>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12">
+                <ul>
+                    <li>
+                        <div class="col-6">
+                            <img src="../../../assets/{{Producto.imag}}" alt="{{Producto.imag}}">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h3 class="mt-5" id="til">RECOMENDACIONES</h3>
+                            <p id="reco">{{Producto.recomendacion}}</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card-body col-4" id="cajita">
+                            <h4 id="marc">{{Producto.marca}}</h4>
+                            <br>
+                            <h4 id="mode">{{Producto.modelo}}</h4>
+                            <br>
+                            <br>
+                            <p id="si">{{Producto.explicacion}}</p>
+                            <p id="tal">{{Producto.descripcion1}}</p>
+                            <p id="tal">{{Producto.descripcion2}}</p>
+                            <p id="tal">{{Producto.descripcion3}}</p>
+                            <p id="tal">{{Producto.descripcion4}}</p>
+                            <p id="tal">{{Producto.descripcion5}}</p>
+                            <p id="valo">{{Producto.valor}}</p>
+                            <br>
+                            <form [formGroup]="detalle" (ngSubmit)="GuardarDatos()" novalidate>
+                                <p id="can">Cantidad</p>
+                                <div class="quantity" id="rango">
+                                    <input type="number" min="0" max="9" step="0" value="0" formControlName="cant">
+                                </div>
+                                <br>
+                                <button type="submit" id="butt" [disabled]="detalle.invalid">Agregar a la bolsa</button>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

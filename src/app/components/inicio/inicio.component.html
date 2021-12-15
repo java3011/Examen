@@ -1,0 +1,25 @@
+<section>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-12" id="cajaG">
+                <ul>
+                    <li *ngFor="let producto of ListaProductos" style="float: left;" class="mb-4">
+                        <div style="width: 16rem;">
+                            <img src="../../../assets/{{producto.imag}}" class="card-img-top" alt="{{producto.imag}}">
+                        </div>
+                        <div class="card-body" id="caja" style="width: 18rem;"></div>
+                        <p id="mar">{{producto.marca}}</p>
+                        <p id="mo">{{producto.modelo}}</p>
+                        <ngb-rating [max]="10" [(rate)]="startRating" [readonly]="false" id="cla"></ngb-rating>
+                        <br>
+                        <br>
+                        <button id="but" [routerLink]="['detalleProducto', producto.id]">Ver</button>
+                        <br>
+                        <br>
+                        <p id="val">{{producto.valor}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
